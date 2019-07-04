@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+#header {
+  height: auto;
+}
+.app-advertising {
+  background-color: #1F2444;
+  padding: 15px;
+  color: white;
+  width: 100vw;
+  background-image: url("/images/app-advert.jpg");
+  background-size: cover;
+  &-title {
+    text-align: left !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &-description {
+    text-align: left !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    max-width: 70%;
+  }
+  button {
+    max-width: 65%;
+    padding: 10px 15px !important;
+  }
+}
+.order-confirmation-infos {
+  padding: 15px;
+  &-validate {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color:  $color-dark-blue;
+  }
+  &-command-number {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color:  $color-dark-blue;
+  }
+  &-mail-sent {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color:  $color-dark-blue;
+  }
+}
+.order-payment-section {
+  background-color: #F8F8F8;
+  border-top: none;
+}
+.payment-summary {
+  background-color: #D4D5DB !important;
+  color:  $color-dark-blue !important;
+  .cart-total-amount {
+    color:  $color-dark-blue !important;
+  }
+}

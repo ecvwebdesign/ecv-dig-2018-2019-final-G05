@@ -1,0 +1,247 @@
+@import "../variables.scss";
+
+#promos {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.2rem;
+  }
+}
+#news {
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  overflow-y: scroll;
+  .news-item {
+    min-width: 310px;
+    padding-right: 15px;
+    position: relative;
+  }
+  img {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 6px;
+  }
+  .news-content {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #F8F8F8;
+    max-width: 235px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+  }
+  .dark-blue-shade {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    border-radius: 4px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(38, 43, 75, 0) 0%, #262B4B 100%);
+  }
+  .news-description {
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+  button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4.5rem;
+  }
+  .img-wrapper {
+    position: relative;
+  }
+}
+#selectioned {
+  .corner-ribbon {
+    top: 15px;
+    left: -71px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .selectionned-products {
+    overflow-x: scroll;
+    padding-bottom: 15px;
+  }
+  .MuiSvgIcon-root {
+    color: $color-red;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: $color-red;
+  }
+  span {
+    text-align: center;
+  }
+  > .row > div:nth-child(2){
+    padding-left: 15px;
+  }
+  .product {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  .product-img {
+    width: 155px;
+    border-radius: 4px;
+  }
+  .product-brand {
+    margin-top: 0.7rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color:  $color-dark-blue;
+  }
+  .product-desc {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color:  $color-dark-blue;
+    margin-bottom: 0.3rem;
+  }
+  .product-price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color:  $color-red;
+    &.not-discounted {
+      color: $color-dark-blue;
+    }
+  }
+  .img-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 155px;
+    border-radius: 4px;
+    .MuiButtonBase-root {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+
+.sas-page {
+  .product-total {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+  }
+ .product-options {
+    margin-left: 0;
+   padding-left: 15px;
+   padding-right: 15px;
+   border-right: 1px solid #E5E5E5;
+   border-left: 1px solid #E5E5E5;
+ }
+  .product {
+    margin-bottom: 20px;
+  }
+  .color-option {
+    border-left: 1px solid #E5E5E5;
+  }
+  .size-option {
+    border-right: 1px solid #E5E5E5;
+  }
+}
+#personalization {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  z-index: 2;
+  button {
+    min-width: 43%;
+    padding: 0.5rem 2rem;
+  }
+  .personalization-title {
+    max-width: 52%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+  }
+  .personalization-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #A9A9A9;
+  }
+  .personalization-filter {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+  .close-personalization {
+    position: absolute;
+    color: white;
+    top: -2rem;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      margin-left: 5px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .personalization-popup {
+    button {
+      padding: 15px 20px !important;
+      margin-left: 1rem;
+    }
+    position: absolute;
+    padding-bottom: 4rem;
+    bottom: 0;
+    width: 100vw;
+    background-color: white;
+  }
+}
+.sas-list {
+  overflow-x: hidden;
+  div.product:nth-of-type(odd) {
+    padding-right: 15px !important;
+  }
+}

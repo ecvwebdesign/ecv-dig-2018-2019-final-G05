@@ -1,0 +1,104 @@
+@import "../../variables.scss";
+
+#newsletter {
+  background-color:  $color-dark-blue;
+  .newsletter-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    .bold {
+      font-weight: bold;
+    }
+  }
+  .newsletter-description {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  label {
+    font-family: 'Open Sans';
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  input {
+    display: flex;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 43px;
+  }
+}
+#our-stores {
+  border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+}
+#follow-us {
+  border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+  img {
+    margin-right: 0.7rem;
+  }
+}
+#footer-links {
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    padding: 1rem;
+    img {
+      display: flex;
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+  li:not(:last-child) {
+    border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+  }
+}
+#footer-links ul li {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color:  $color-dark-blue;
+}
+#chat {
+  position: absolute;
+  display: none;
+}
+#reasurance {
+  .MuiSvgIcon-root {
+    height: 1.5em;
+    width: 1.5em;
+    fill: $color-dark-blue !important;
+  }
+  padding: 15px;
+  .reasurance-wrapper-logo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color:  $color-dark-blue;
+  }
+}

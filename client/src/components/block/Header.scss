@@ -1,0 +1,87 @@
+@import "../../variables.scss";
+
+#header {
+  .MuiBadge-badge.MuiBadge-colorPrimary {
+    background-color: $color-red;
+  }
+  padding: 0.7rem;
+  height: 127px;
+  .icon-description {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color:  $color-dark-blue;
+  }
+  svg {
+    fill: $color-dark-blue !important;
+  }
+  .header-list {
+    > *:hover {
+        cursor: pointer;
+      }
+  }
+  img {
+    display: block;
+    &.logo-burger {
+      width: 22px;
+      height: 12px;
+    }
+    &.logo-intersport {
+      width: 34px;
+      height: 34px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    &.logo-cart {
+      width: 20px;
+      height: 15px;
+    }
+    &.logo-vector {
+      width:4px;
+      height:4px;
+    }
+    &.logo-account {
+      width: 13px;
+      height: 16px;
+    }
+    &.logo-search {
+      width: 17px;
+      height: 17px;
+    }
+  }
+  .search-wrapper {
+    box-shadow: none;
+    border-top: none;
+    margin-top: 1rem;
+    height: 43px;
+    position: relative;
+    background-color: #F8F8F8;
+    border: 1px solid #F8F8F8;
+    border-radius: 4px;
+    input {
+      background-color: transparent;
+      padding: 20px;
+      height: 100%;
+      width: 100%;
+      border: 1px solid #F8F8F8;
+      border-radius: 4px;
+      &::placeholder {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #A9A9A9;      }
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import "../../variables.scss";
+
+#personalization-header {
+  background-color:  $color-dark-blue;
+  padding: 15px;
+  hr {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  img {
+    max-width: none;
+    margin-left: 20px;
+  }
+  span.step {
+    background: transparent;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #E5E5E5;
+    border: 1px solid #E5E5E5;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-align: center;
+    width: 1.6em;
+    margin-right: 10px;
+    margin-left: 10px;
+    &.current-step {
+      flex-basis: 33%;
+      border-color: white;
+      color: white;
+    }
+  }
+  .step-name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .horizontal-line{
+    width: 50%;
+    margin: auto;
+    border-color: white;
+  }
+  .current-step-1 {
+    .horizontal-line {
+      &:last-of-type {
+        max-width: 10px;
+      }
+    }
+  }
+  .current-step-2 {
+    .horizontal-line {
+      &:first-of-type {
+        max-width: 10px;
+      }
+    }
+  }
+  .current-step-3 {
+    .horizontal-line {
+      width: 11%;
+      &:last-of-type {
+        margin-right: 12px !important;
+      }
+      &:not(:last-of-type) {
+        max-width: 10px;
+      }
+    }
+  }
+}

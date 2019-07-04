@@ -1,0 +1,78 @@
+@import '../../variables';
+
+.menu {
+  .MuiTypography-body1 {
+    padding: 0 !important;
+  }
+  .MuiTab-textColorInherit {
+    font-family: 'Open Sans' !important;
+    text-decoration: none !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-transform: none !important;
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #E5E5E5 !important;
+    border-bottom: none !important;
+    &:first-of-type {
+      display: none;
+    }
+    &:nth-of-type(2) {
+      border-right: none !important;
+    }
+    &:last-of-type {
+      border-left: none !important;
+    }
+  }
+  .PrivateTabIndicator-colorSecondary-62 {
+    background-color: $color-dark-blue !important;
+  }
+  .MuiPaper-elevation4 {
+    box-shadow: none !important;
+  }
+  .MuiTab-textColorInherit {
+    opacity: 1 !important;
+  }
+  .menu-list-item {
+    padding: 7.5px 15px;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #262B4B;
+  }
+  .item-promotions {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-red;
+    border-left: 3px solid $color-red;
+  }
+  .item-other-sports {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-blue;
+    border-left: 3px solid $color-blue;
+  }
+  .menu-icons {
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    .menu-icon {
+      flex-basis: 40%;
+      display: flex;
+      margin-bottom: 20px;
+    }
+  }
+}
